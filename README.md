@@ -7,18 +7,18 @@ Protein Absolute Quantification: emPAI Method
 The Exponentially Modified Protein Abundance Index (emPAI) method is employed as a primary approach for converting relative protein abundances to absolute values. This method addresses the challenge of accurately quantifying proteins in complex biological mixtures.
 1. Protein Abundance Index (PAI)
 The PAI is the foundation of emPAI and is calculated as:
-PAI=NobsdNobsbl(Eq. 1)\text{PAI} = \frac{N_{\text{obsd}}}{N_{\text{obsbl}}} \quad \text{(Eq. 1)} 
+PAI=NobsdNobsbl(Eq. 1) 
 Where:
-•	NobsdN_{\text{obsd}} = Number of observed peptides
-•	NobsblN_{\text{obsbl}} = Number of theoretically observable peptides
+•	Nobsd = Number of observed peptides
+•	Nobsbl = Number of theoretically observable peptides
 2. emPAI Calculation
 emPAI is derived from PAI using an exponential transformation:
-emPAI=10PAI−1(Eq. 2)\text{emPAI} = 10^{\text{PAI}} - 1 \quad \text{(Eq. 2)} 
+emPAI=10PAI−1(Eq. 2)
 3. Protein Content Estimation
 •	Molar percentage (mol%):
-\text{Protein content (mol%)} = \frac{\text{emPAI}}{\sum (\text{emPAI})} \times 100 \quad \text{(Eq. 3)} 
+{Protein content (mol%)} = {emPAI}}{\sum ({emPAI})} \times 100 (Eq. 3)} 
 •	Weight percentage (weight%):
-\text{Protein content (weight%)} = \frac{\text{emPAI} \times M_r}{\sum (\text{emPAI} \times M_r)} \times 100 \quad \text{(Eq. 4)} 
+{Protein content (weight%)} = {{emPAI} \times M_r}{\sum (\{emPAI} \times M_r)} \times 100 {(Eq. 4)} 
 Where MrM_r is the molecular weight of the protein.
 4. Rationale Behind emPAI
 •	PAI normalizes raw peptide counts to account for protein size and sequence bias.
