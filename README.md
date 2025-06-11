@@ -14,6 +14,7 @@ Once the emPAI value is determined, the protein content in molar percentage (mol
 Proteincontent(mol%)=∑(emPAI)emPAI​×100 (Eq. 3)
 
 Proteincontent(weight%)=∑(emPAI×Mr​)emPAI×Mr​​×100 (Eq. 4)
+
 The underlying logic of emPAI is rooted in empirical observations. The PAI normalizes raw peptide counts, thereby accounting for biases related to protein size and composition. While PAI itself is not directly proportional to molar amount, a pivotal discovery demonstrated a consistent linear relationship between the logarithm of protein concentration and PAI values. This relationship was observed for human serum albumin and validated across diverse proteins in mouse neuro2a cell lysate, showing a high correlation (r=0.89). The "minus one" adjustment in the emPAI formula was empirically determined through experimental fitting to optimize this direct proportionality. This adjustment ensures that if a PAI of 0 is obtained (indicating no peptides were observed and the protein is effectively absent), then emPAI also correctly yields a value of 0 (100−1=0), establishing a proper baseline and a direct proportionality between emPAI and protein content.
 
 Protein Absolute Quantification: Protein Concentration Conversion Method
