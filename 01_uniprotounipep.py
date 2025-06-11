@@ -11,8 +11,6 @@ result = df_exploded.groupby('ProteinID').agg(
     PeptideSequences=('PeptideSequence', lambda x: ', '.join(sorted(set(x)))),
     Total_PG_Quantity=('PG.Quantity', 'sum')
 ).reset_index()
-
-
 output_file = r"C:\Users\Hp\Downloads\protein_peptide_summary_with_pg.csv"
 result.to_csv(output_file, index=False)
 
